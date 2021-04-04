@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: head(~{::title})" class="animated fadeIn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签</title>
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css" >-->
+    <link rel="stylesheet" href="../static/css/semantic.min.css" >
+    <link rel="stylesheet" href="../static/css/me.css" >
+
+    <!--    <link rel="stylesheet" src="/css/semantic.min.css">-->
+
+</head>
+<body>
+<!--<!导航&ndash;&gt;-->
+<nav th:replace="_fragments :: menu(3)" class="ui inverted attached segment me-padded-ab-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">Blue</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i> 首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="right  m-item item m-mobile-hide ">
+                <div class="ui search">
+                    <div class="ui inverted icon input">
+                        <input class="prompt" type="text" placeholder="搜索...">
+                        <i class="search link icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+<!--<!中间内容>-->
+<div class="me-padded-ab-big">
+    <div class="ui container">
+<!--        header-->
+        <div class="ui top attached segment">
+            <div class="ui middle two column grid">
+                <div class="column">
+                    <h3 class="ui teal header">分类</h3>
+                </div>
+                <div class="right aligned column">
+                    共 <h3 class="ui orange header m-inline-block m-text-thin">14</h3> 篇
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ui attached segment me-padded-ab-large ">
+            <a href="#" target="_blank" class="ui teal basic left pointing large label me-margin-ab-tiny">
+                方法论 <div class="detail">23</div>
+            </a>
+            <a href="#" target="_blank" class="ui teal basic left pointing large label me-margin-ab-tiny">
+                方法论 <div class="detail">23</div>
+            </a>
+            <a href="#" target="_blank" class="ui teal basic left pointing large label me-margin-ab-tiny">
+                方法论 <div class="detail">23</div>
+            </a>
+            <a href="#" target="_blank" class="ui teal basic left pointing large label me-margin-ab-tiny">
+                方法论 <div class="detail">23</div>
+            </a>
+            <a href="#" target="_blank" class="ui teal basic left pointing large label me-margin-ab-tiny">
+                方法论 <div class="detail">23</div>
+            </a>
+        </div>
+
+        <div class="ui top attached teal segment">
+            <div class="ui padded vertical segment me-padded-ab-big me-padded-lr-middle me-padded-lr-clear">
+            <div class="ui mobile reversed stackable grid">
+                <!--                                左边内容-->
+                <div class="eleven wide column">
+                    <h3 class="ui header">想要去原型吗？</h3>
+                    <p class="m-text">摘要: Excel 在读取 csv 的时候是通过读取文件头上的 bom 来识别编码的，这导致如果我们生成 csv 文件的平台输出无 bom 头编码的准中默认是可以没有 bom 头的），Excel 只能自动按照默认编码读取，不一致就会出现乱码问题了。掌握了这点相信乱码已经无法阻挡我们前进的步伐了：........</p>
+
+                    <div class="ui grid">
+
+                        <div class="row">
+                            <div class="eleven wide column">
+                                <div class="ui mini horizontal link list">
+                                    <div class="item">
+                                        <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui avatar image">
+                                        <div class="content">
+                                            <div class="content"><a href="#" class="header"></a> 蓝求旺</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <i class="calendar icon"></i>2021-3-28
+                                    </div>
+                                    <div class="item">
+                                        <i class="eye icon"></i>2533
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="right aligned five wide column">
+                                <a href="#" target="_blank" class="ui teal basic label me-padded-mini m-opacity-mini">认知升级</a>
+                            </div>
+                            <div class="row">
+                                <div class="column ">
+                                    <a href="#" target="_blank" class="ui  basic teal left pointing label  m-text-thin">
+                                        方法论
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="five wide column">
+                    <a href="#" target="_blank">
+                        <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui rounded image">
+                    </a>
+
+                </div>
+                <!--                                右边内容-->
+            </div>
+
+        </div>
+            <div class="ui padded vertical segment me-padded-ab-big me-padded-lr-middle me-padded-lr-clear">
+                <div class="ui mobile reversed stackable grid">
+                    <!--                                左边内容-->
+                    <div class="eleven wide column">
+                        <h3 class="ui header">想要去原型吗？</h3>
+                        <p class="m-text">摘要: Excel 在读取 csv 的时候是通过读取文件头上的 bom 来识别编码的，这导致如果我们生成 csv 文件的平台输出无 bom 头编码的准中默认是可以没有 bom 头的），Excel 只能自动按照默认编码读取，不一致就会出现乱码问题了。掌握了这点相信乱码已经无法阻挡我们前进的步伐了：........</p>
+
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <div class="ui mini horizontal link list">
+                                    <div class="item">
+                                        <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui avatar image">
+                                        <div class="content">
+                                            <div class="content"><a href="#" class="header"></a> 蓝求旺</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="calendar icon"></i>2021-3-28
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="eye icon"></i>2533
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="right aligned five wide column">
+                                <a href="#" target="_blank" class="ui teal basic label me-padded-mini m-opacity-mini">认知升级</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="five wide column">
+                        <a href="#" target="_blank">
+                            <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui rounded image">
+                        </a>
+
+                    </div>
+                    <!--                                右边内容-->
+                </div>
+
+            </div>
+            <div class="ui padded vertical segment me-padded-ab-big me-padded-lr-middle me-padded-lr-clear">
+                <div class="ui mobile reversed stackable grid">
+                    <!--                                左边内容-->
+                    <div class="eleven wide column">
+                        <h3 class="ui header">想要去原型吗？</h3>
+                        <p class="m-text">摘要: Excel 在读取 csv 的时候是通过读取文件头上的 bom 来识别编码的，这导致如果我们生成 csv 文件的平台输出无 bom 头编码的准中默认是可以没有 bom 头的），Excel 只能自动按照默认编码读取，不一致就会出现乱码问题了。掌握了这点相信乱码已经无法阻挡我们前进的步伐了：........</p>
+
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <div class="ui mini horizontal link list">
+                                    <div class="item">
+                                        <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui avatar image">
+                                        <div class="content">
+                                            <div class="content"><a href="#" class="header"></a> 蓝求旺</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="calendar icon"></i>2021-3-28
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="eye icon"></i>2533
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="right aligned five wide column">
+                                <a href="#" target="_blank" class="ui teal basic label me-padded-mini m-opacity-mini">认知升级</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="five wide column">
+                        <a href="#" target="_blank">
+                            <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui rounded image">
+                        </a>
+
+                    </div>
+                    <!--                                右边内容-->
+                </div>
+
+            </div>
+            <div class="ui padded vertical segment me-padded-ab-big me-padded-lr-middle me-padded-lr-clear">
+                <div class="ui mobile reversed stackable grid">
+                    <!--                                左边内容-->
+                    <div class="eleven wide column">
+                        <h3 class="ui header">想要去原型吗？</h3>
+                        <p class="m-text">摘要: Excel 在读取 csv 的时候是通过读取文件头上的 bom 来识别编码的，这导致如果我们生成 csv 文件的平台输出无 bom 头编码的准中默认是可以没有 bom 头的），Excel 只能自动按照默认编码读取，不一致就会出现乱码问题了。掌握了这点相信乱码已经无法阻挡我们前进的步伐了：........</p>
+
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <div class="ui mini horizontal link list">
+                                    <div class="item">
+                                        <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui avatar image">
+                                        <div class="content">
+                                            <div class="content"><a href="#" class="header"></a> 蓝求旺</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="calendar icon"></i>2021-3-28
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="eye icon"></i>2533
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="right aligned five wide column">
+                                <a href="#" target="_blank" class="ui teal basic label me-padded-mini m-opacity-mini">认知升级</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="five wide column">
+                        <a href="#" target="_blank">
+                            <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui rounded image">
+                        </a>
+
+                    </div>
+                    <!--                                右边内容-->
+                </div>
+
+            </div>
+            <div class="ui padded vertical segment me-padded-ab-big me-padded-lr-middle me-padded-lr-clear">
+                <div class="ui mobile reversed stackable grid">
+                    <!--                                左边内容-->
+                    <div class="eleven wide column">
+                        <h3 class="ui header">想要去原型吗？</h3>
+                        <p class="m-text">摘要: Excel 在读取 csv 的时候是通过读取文件头上的 bom 来识别编码的，这导致如果我们生成 csv 文件的平台输出无 bom 头编码的准中默认是可以没有 bom 头的），Excel 只能自动按照默认编码读取，不一致就会出现乱码问题了。掌握了这点相信乱码已经无法阻挡我们前进的步伐了：........</p>
+
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <div class="ui mini horizontal link list">
+                                    <div class="item">
+                                        <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui avatar image">
+                                        <div class="content">
+                                            <div class="content"><a href="#" class="header"></a> 蓝求旺</div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="calendar icon"></i>2021-3-28
+                                    </div>
+                                    <div class="item">
+
+                                        <i class="eye icon"></i>2533
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="right aligned five wide column">
+                                <a href="#" target="_blank" class="ui teal basic label me-padded-mini m-opacity-mini">认知升级</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="five wide column">
+                        <a href="#" target="_blank">
+                            <img src="https://img2.baidu.com/it/u=3319438021,2309257658&fm=26&fmt=auto&gp=0.jpg" alt="" class="ui rounded image">
+                        </a>
+
+                    </div>
+                    <!--                                右边内容-->
+                </div>
+
+            </div>
+
+        </div>
+        <div class="ui bottom attached segment">
+            <div class="ui middle aligned two column grid">
+                <div class="column">
+                    <a href="#" class="ui mini teal basic button">上一页</a>
+                </div>
+                <div class="right aligned column">
+                    <a href="#" class="ui mini teal basic button">下一页</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<br/>
+<br/>
+
+<!--底部-->
+<footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/yellow.png" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced " >最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                    <a href="#" class="item m-text-thin">用户故事（User Story）</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin">Email：1720815955@qq.com</a>
+                    <a href="#" class="item m-text-thin">QQ：1720815955</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">Blog</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客、记录学习进度和关于编程、写作、思考相关的任何内容...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2016 - 2021Wang_LQ Designed by Wang_LQ</p>
+    </div>
+
+</footer>
+
+<script src="../static/js/jquery.min.js"></script>
+
+<script src="../static/js/semantic.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
+
+</body>
+</html>
